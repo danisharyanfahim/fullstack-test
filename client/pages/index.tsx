@@ -10,7 +10,7 @@ export interface User {
 }
 
 const Home = () => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000'
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://fullstack-test-beta.vercel.app/'
   const [users, setUsers] = useState<User[]>([])
   const [newUser, setNewUser] = useState({ name: '', email: '', password: '' })
   const [updateUser, setUpdateUser] = useState({ id: '', name: '', email: '', password: '' })
